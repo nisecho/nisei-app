@@ -1,0 +1,25 @@
+.mainButton {
+  position: relative;
+}
+
+.contents {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.username {
+
+}
+
+.iconContainer {
+
+  margin: 0 12px 0 0;
+  border-radius: 50%;
+}
+
+img {
+  height: 100%;
+  width: auto;
+  border-radius: 50%;
+}

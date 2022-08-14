@@ -1,9 +1,8 @@
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion'
+import SignInButton from './SignInButton'
 
 import classes from './MainHeader.module.css';
-
-
 
 const MainHeader = () => {
   return (
@@ -40,6 +39,14 @@ const MainHeader = () => {
               About Me
             </NavLink>
           </motion.li>
+            {/*<motion.li*/}
+            {/*whileHover={{*/}
+            {/*            scale: 1.0,*/}
+            {/*            transition: {duration: .25},*/}
+            {/*          }}>*/}
+            {/*    <SignInButton/>*/}
+            {/*</motion.li>*/}
+
         </ul>
       </nav>
     </header>

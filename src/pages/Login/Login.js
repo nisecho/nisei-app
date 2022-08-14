@@ -11,8 +11,8 @@ function Home() {
         variants={pageVariants}
         >
             <div>
-                <h1>Home Page</h1>
-                
+                <p>Home Page</p>
+
             </div>
         </motion.div>
     )

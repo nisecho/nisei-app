@@ -6,12 +6,8 @@ import Artwork from './pages/Artwork/Artwork';
 import MainHeader from './components/MainHeader';
 import Home from './pages/Home/Home';
 import About from './pages/About/About'
-import { Fade } from 'react-reveal';
-import { withReveal } from 'react-reveal/withReveal';
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
-
-//const ArtworkAnimated = withReveal(Artwork, <Fade right refProp="innerRef" />);
 
 function App() {
 
@@ -20,10 +16,9 @@ function App() {
 
   return (
     <div className={'home'}>
-      {/* <MainHeader /> */}
-      <Fade top> 
-        <MainHeader />
-      </Fade>
+        <motion.div initial={{y: -100}} animate={{ y: 0 }} transition={{duration: 1}}>
+            <MainHeader/>
+        </motion.div>
       <main>
         <AnimatePresence exitBeforeEnter onExitComplete={() => setShowModal(false)}>
           <Routes path = "/" location={location} key={location.key}>
